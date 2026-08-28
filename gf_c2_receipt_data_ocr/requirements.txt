@@ -1,0 +1,20 @@
+# Core
+requests>=2.31
+pandas>=2.0
+Pillow>=10.0
+gradio>=4.0
+
+# Basic OCR backend (default: easyocr). Pick ONE and comment out the others
+# if you want a lighter install -- config.BASIC_OCR_BACKEND controls which
+# one ocr_basic.py actually loads.
+easyocr>=1.7
+# paddleocr>=2.7
+# paddlepaddle>=2.5
+# pytesseract>=0.3.10   # also requires the tesseract-ocr system binary
+
+# Note: the multimodal and entity-extraction LLM stages talk to a local
+# Ollama server over HTTP (see ocr_multimodal.py / entity_extraction.py),
+# so no LLM SDK is required here. Install Ollama separately from
+# https://ollama.com and run:
+#     ollama pull llava
+#     ollama pull llama3.1

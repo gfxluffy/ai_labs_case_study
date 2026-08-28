@@ -1,0 +1,14 @@
+# data & generated output — both challenges
+gf_c1_solar_output_llm/data/
+gf_c1_solar_output_llm/output/
+gf_c1_solar_output_llm/archive/
+gf_c2_receipt_data_ocr/data/
+gf_c2_receipt_data_ocr/output/
+
+# python cruft
+__pycache__/
+*.pyc
+
+# Office lock files
+~$*.docx
+~$*.pptx
