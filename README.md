@@ -6,3 +6,5 @@ Two take-home challenges:
 - [`gf_c2_receipt_data_ocr/`](gf_c2_receipt_data_ocr) — Receipt data extraction pipeline (OCR + LLM on SROIE V2 receipts).
 
 See each folder's own README for setup and details.
+
+Copy of presentation slides: [\[Slide Deck\] AI Labs Case Study.pdf](<[Slide Deck] AI Labs Case Study.pdf>)
