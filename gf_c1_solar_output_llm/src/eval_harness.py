@@ -45,12 +45,15 @@ from __future__ import annotations
 
 import configparser
 import math
+import time
+from datetime import datetime
 from types import SimpleNamespace
 
 import pandas as pd
 
 from agent import (
     HECTARE_TO_M2,
+    PANEL_KWP_PER_M2,
     check_extrapolation,
     compare_cities,
     compute_descriptive_stat,
@@ -105,8 +108,8 @@ def _get_path(d: dict, path: str):
 
 DEFAULT_VALUE_PATHS = {
     "base_output": "value",
-    "farm_output": "value",
-    "weather_conditioned_output": "result.prediction",
+    "farm_output": "result.total_output_kwh",
+    "weather_conditioned_output": "result.specific_yield_kwh_per_kwp",
     "rainfall_sensitivity": "result.delta",
     "descriptive_stats": "result.value",
 }
@@ -117,7 +120,7 @@ def extract_numeric_result(exec_result: dict, field_path: str | None = None):
     Pull the single numeric value out of an execute_intent() result that
     represents "the answer" for accuracy-checking purposes. Uses a
     type-appropriate default path unless field_path overrides it (e.g. to
-    check 'result.total_output' instead of 'result.prediction' when a
+    check 'result.total_output_kwh' instead of 'result.specific_yield_kwh_per_kwp' when a
     question includes a farm size).
     """
     if exec_result.get("error"):
@@ -241,16 +244,17 @@ def run_white_box_tests() -> bool:
     base_pred, base_err, _ = predict_base_output("Sydney", model, features, city_features)
     check("base output computes without error", base_err is None and base_pred is not None)
 
-    farm_pred, farm_err, _ = predict_farm_output("Sydney", 2, model, features, city_features)
-    expected_farm = base_pred * 2 * HECTARE_TO_M2
-    check("farm output = base_pred * hectares * HECTARE_TO_M2",
-          farm_err is None and abs(farm_pred - expected_farm) < 1e-9)
+    farm_result, farm_err, _ = predict_farm_output("Sydney", 2, model, features, city_features)
+    expected_capacity = 2 * HECTARE_TO_M2 * PANEL_KWP_PER_M2
+    expected_farm = base_pred * expected_capacity
+    check("farm output = base_pred * hectares * HECTARE_TO_M2 * PANEL_KWP_PER_M2",
+          farm_err is None and abs(farm_result["total_output_kwh"] - expected_farm) < 1e-9)
 
     # -- predict_weather_conditioned_output: override + default tracking --
     wc_result, wc_err, wc_note = predict_weather_conditioned_output(
         "Sydney", {"Sunshine": 9}, model, features, city_features, feature_ranges
     )
-    check("weather override changes the prediction vs. base", wc_err is None and abs(wc_result["prediction"] - base_pred) > 1e-9)
+    check("weather override changes the prediction vs. base", wc_err is None and abs(wc_result["specific_yield_kwh_per_kwp"] - base_pred) > 1e-9)
     check("weather override correctly tracks the defaulted feature", wc_result["defaulted_features"] == ["Cloud9am"])
     check("weather override correctly tracks the given feature", wc_result["given_features"] == {"Sunshine": 9})
 
@@ -344,8 +348,8 @@ BENCHMARK = [
     {
         "question": f"If I build a 5-hectare solar farm in {CITY_B}, what's my expected daily output?",
         "expected_intent": {"intent": "base_or_farm_output", "city": CITY_B, "hectares": 5},
-        "expected_value_fn": lambda ctx: _first(
-            predict_farm_output(CITY_B, 5, ctx.model, ctx.features, ctx.city_features)
+        "expected_value_fn": lambda ctx: _result_field(
+            predict_farm_output(CITY_B, 5, ctx.model, ctx.features, ctx.city_features), "total_output_kwh"
         ),
     },
     {
@@ -356,7 +360,7 @@ BENCHMARK = [
             predict_weather_conditioned_output(
                 CITY_C, {"Sunshine": 9, "Cloud9am": 1}, ctx.model, ctx.features, ctx.city_features, ctx.feature_ranges
             ),
-            "prediction",
+            "specific_yield_kwh_per_kwp",
         ),
         # True only if the model has exactly these 2 trained features. With more
         # features, any not supplied here will default and trigger a warning note
@@ -401,7 +405,7 @@ BENCHMARK = [
             predict_weather_conditioned_output(
                 CITY_D, {"Sunshine": 10}, ctx.model, ctx.features, ctx.city_features, ctx.feature_ranges
             ),
-            "prediction",
+            "specific_yield_kwh_per_kwp",
         ),
         "expects_warning": True,  # should flag that other features were defaulted
     },
@@ -456,9 +460,9 @@ BENCHMARK = [
             predict_weather_conditioned_output(
                 CITY_H, {"Sunshine": 8}, ctx.model, ctx.features, ctx.city_features, ctx.feature_ranges, hectares=10
             ),
-            "total_output",
+            "total_output_kwh",
         ),
-        "value_field": "result.total_output",
+        "value_field": "result.total_output_kwh",
     },
 
     # --- Edge case: multiplier phrased in words, not digits ---
@@ -513,8 +517,8 @@ BENCHMARK = [
     {
         "question": f"I'm thinking about a 5 hectare farm near {CITY_B} -- what daily output should I expect?",
         "expected_intent": {"intent": "base_or_farm_output", "city": CITY_B, "hectares": 5},
-        "expected_value_fn": lambda ctx: _first(
-            predict_farm_output(CITY_B, 5, ctx.model, ctx.features, ctx.city_features)
+        "expected_value_fn": lambda ctx: _result_field(
+            predict_farm_output(CITY_B, 5, ctx.model, ctx.features, ctx.city_features), "total_output_kwh"
         ),
     },
 
@@ -544,6 +548,9 @@ def run_benchmark(benchmark, model, features, city_features, feature_ranges, wea
 
     for case in benchmark:
         question = case["question"]
+        start_time = datetime.now()
+        start_perf = time.perf_counter()
+
         parsed = parse_question(question, list_cities)
         trajectory_pass, mismatches = intent_matches(parsed, case["expected_intent"])
 
@@ -551,6 +558,9 @@ def run_benchmark(benchmark, model, features, city_features, feature_ranges, wea
         answer = format_answer(exec_result)
         if exec_result.get("warning"):
             answer += f"\n\n{exec_result['warning']}"
+
+        end_time = datetime.now()
+        elapsed_s = time.perf_counter() - start_perf
 
         status = "PASS"
         expected_value = None
@@ -599,11 +609,15 @@ def run_benchmark(benchmark, model, features, city_features, feature_ranges, wea
                 "warning_pass": warning_pass,
                 "status": status,
                 "answer": answer,
+                "started_at": start_time.strftime("%H:%M:%S.%f"),
+                "ended_at": end_time.strftime("%H:%M:%S.%f"),
+                "elapsed_s": elapsed_s,
             }
         )
 
         if verbose:
             print(f"[{status}] {question}")
+            print(f"    started: {start_time:%H:%M:%S.%f} | ended: {end_time:%H:%M:%S.%f} | elapsed: {elapsed_s:.3f}s")
 
     return pd.DataFrame(rows)
 

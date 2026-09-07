@@ -7,13 +7,16 @@ Wraps the trained regression model (solar_model.joblib) with an LLM-based
 orchestration layer: natural-language question -> structured intent ->
 call the right function against the model -> natural-language answer.
 
-Four query patterns are supported, matching what the trained model can
+Five query patterns are supported, matching what the trained model can
 actually do (see the earlier discussion this pipeline is based on):
 
   1. BASE / FARM_SIZE queries - "what's my expected output in [city]" or
-     "for a 5-hectare farm in [city]". The model already predicts a
-     long-term average DAILY output rate per unit area; farm-size scaling
-     is deterministic arithmetic (rate * area), not a second model call.
+     "for a 5-hectare farm in [city]". The model predicts a long-term
+     average daily SPECIFIC YIELD in kWh/kWp (Global Solar Atlas's PVOUT
+     layer). Farm-size scaling is deterministic arithmetic, not a second
+     model call: area (m^2) * panel capacity density (kWp/m^2) gives system
+     capacity (kWp), which * specific yield (kWh/kWp) gives total output
+     in kWh.
 
   2. WEATHER-CONDITIONED queries - "what's my expected yield tomorrow in
      [city] given Sunshine of 9 hours and Cloud9am of 1?" (the brief's own
@@ -33,14 +36,12 @@ actually do (see the earlier discussion this pipeline is based on):
 
   4. COMPARE queries - ranks a list of cities by predicted output.
 
+  5. DESCRIPTIVE STATS queries - computes raw-data statistics (mean,
+     percentile, variability) directly from daily records (no model involved).
+
 LLM BACKEND: this script is written against a local, OpenAI-compatible
 endpoint (e.g. Ollama's `ollama serve`, which exposes /v1/chat/completions
-on http://localhost:11434/v1) so no paid API is required. Swap
-llm_base_url / llm_model_name in conf.cfg's [agent] section for whatever
-local model you're running, or replace `call_llm()` with a different
-backend entirely - the rest of the pipeline doesn't care how that function
-is implemented, as long as it takes a prompt string and returns a text
-response, or None on failure.
+on http://localhost:11434/v1) so no paid API is required.
 
 FALLBACK BEHAVIOR: if the LLM server is unreachable or returns something
 unparseable, call_llm() returns None instead of raising. parse_question()
@@ -58,6 +59,8 @@ import configparser
 import json
 import re
 import sys
+import time
+from datetime import datetime
 
 import joblib
 import pandas as pd
@@ -77,11 +80,7 @@ CITY_FEATURES_PATH = _agent_cfg["city_features_path"]
 CITY_COLUMN = _agent_cfg["city_column"]
 
 # Raw (daily-granularity) weather records -- used ONLY for descriptive_stats
-# (e.g. "how variable is rainfall in Cairns?"). This is distinct from
-# CITY_FEATURES_PATH, which is already averaged to one row per city.
-# Genuine day-to-day variability can only be computed from the raw records.
-# Optional: if missing, descriptive_stats answers honestly that it can't
-# compute rather than falling back to anything approximate.
+# (e.g. "how variable is rainfall in Cairns?").
 WEATHER_RAW_PATH = _agent_cfg["weather_raw_path"]
 
 VALID_STATS = {s.strip() for s in _agent_cfg["valid_stats"].split(",")}
@@ -94,6 +93,7 @@ LLM_MODEL_NAME = _agent_cfg["llm_model_name"]
 LLM_API_KEY = _agent_cfg["llm_api_key"]  # Ollama ignores this, but the client requires a value
 
 HECTARE_TO_M2 = int(_agent_cfg["hectare_to_m2"])
+PANEL_KWP_PER_M2 = float(_agent_cfg["panel_kwp_per_m2"])
 
 
 # ---------------------------------------------------------------------------
@@ -245,7 +245,7 @@ def compute_descriptive_stat(city, feature, stat, weather_raw, threshold=None, c
 
 
 def predict_base_output(city, model, features, city_features):
-    """Predicted long-term average daily solar output per unit area for a city."""
+    """Predicted long-term average daily specific yield (kWh/kWp) for a city."""
     row, note = get_city_row(city, city_features)
     if row is None:
         return None, f"No data available for '{city}' - it may be outside Global Solar Atlas's coverage or missing from the weather dataset.", None
@@ -255,15 +255,24 @@ def predict_base_output(city, model, features, city_features):
 
 
 def predict_farm_output(city, hectares, model, features, city_features):
-    """Total expected daily output for a farm of the given size. This is
-    deterministic scaling of the base per-unit-area prediction - NOT a
-    separate model call, since farm size isn't one of the trained features."""
-    base_pred, error, note = predict_base_output(city, model, features, city_features)
+    """Total expected daily output (kWh) for a farm of the given size. This is
+    deterministic scaling of the base specific-yield prediction - NOT a
+    separate model call, since farm size isn't one of the trained features.
+    area (m^2) * PANEL_KWP_PER_M2 gives system capacity (kWp); capacity (kWp)
+    * specific yield (kWh/kWp) gives total output (kWh)."""
+    specific_yield, error, note = predict_base_output(city, model, features, city_features)
     if error:
         return None, error, note
     area_m2 = hectares * HECTARE_TO_M2
-    total = base_pred * area_m2
-    return total, None, note
+    capacity_kwp = area_m2 * PANEL_KWP_PER_M2
+    total_kwh = specific_yield * capacity_kwp
+    result = {
+        "specific_yield_kwh_per_kwp": float(specific_yield),
+        "area_m2": area_m2,
+        "capacity_kwp": capacity_kwp,
+        "total_output_kwh": float(total_kwh),
+    }
+    return result, None, note
 
 
 def predict_weather_conditioned_output(city, weather_overrides, model, features, city_features, feature_ranges, hectares=None):
@@ -303,13 +312,16 @@ def predict_weather_conditioned_output(city, weather_overrides, model, features,
     pred = model.predict(feature_vector.values.reshape(1, -1))[0]
 
     result = {
-        "prediction": float(pred),
+        "specific_yield_kwh_per_kwp": float(pred),
         "given_features": {f: weather_overrides[f] for f in given_features},
         "defaulted_features": defaulted_features,
     }
     if hectares:
+        area_m2 = hectares * HECTARE_TO_M2
+        capacity_kwp = area_m2 * PANEL_KWP_PER_M2
         result["hectares"] = hectares
-        result["total_output"] = float(pred) * hectares * HECTARE_TO_M2
+        result["capacity_kwp"] = capacity_kwp
+        result["total_output_kwh"] = float(pred) * capacity_kwp
 
     combined_note = note
     if defaulted_features:
@@ -353,6 +365,7 @@ def predict_rainfall_sensitivity(city, multiplier, model, features, city_feature
         "modified_prediction": float(modified_pred),
         "delta": float(delta),
         "pct_change": float(pct_change),
+        "unit": "kWh/kWp/day",
     }
     return result, None, combined_note
 
@@ -366,7 +379,7 @@ def compare_cities(cities, model, features, city_features):
         if error:
             results.append({"city": city, "prediction": None, "error": error, "note": note})
         else:
-            results.append({"city": city, "prediction": float(pred), "error": None, "note": note})
+            results.append({"city": city, "prediction": float(pred), "unit": "kWh/kWp/day", "error": None, "note": note})
     results.sort(key=lambda r: (r["prediction"] is None, -(r["prediction"] or 0)))
     return results
 
@@ -544,12 +557,13 @@ def execute_intent(intent_data, model, features, city_features, feature_ranges, 
         city = (intent_data.get("city") or "").strip() or None
         hectares = intent_data.get("hectares")
         if hectares:
-            value, error, note = predict_farm_output(city, hectares, model, features, city_features)
-            return {"type": "farm_output", "city": city, "hectares": hectares, "value": value,
+            result, error, note = predict_farm_output(city, hectares, model, features, city_features)
+            return {"type": "farm_output", "city": city, "hectares": hectares, "result": result,
                     "error": error, "warning": note}
         else:
             value, error, note = predict_base_output(city, model, features, city_features)
-            return {"type": "base_output", "city": city, "value": value, "error": error, "warning": note}
+            return {"type": "base_output", "city": city, "value": value, "unit": "kWh/kWp/day",
+                    "error": error, "warning": note}
 
     elif intent == "weather_conditioned_output":
         city = (intent_data.get("city") or "").strip() or None
@@ -608,6 +622,9 @@ def format_answer(execution_result):
     prompt = (
         "Phrase the following computed result as a clear, natural-language answer for a solar "
         "farm planning assistant. Do not invent or alter any numbers - use exactly what's given. "
+        "Always state the unit that goes with each number exactly as given in the data (e.g. "
+        "kWh/kWp/day for a per-capacity specific yield, kWh/day for a total farm output, kWp for "
+        "a system capacity) - never omit units or invent different ones. "
         "Keep it to 2-3 sentences.\n\n"
         f"Data: {json.dumps(execution_result, default=str)}"
     )
@@ -622,25 +639,34 @@ def _template_answer(execution_result: dict) -> str:
     t = execution_result.get("type")
     city = execution_result.get("city")
 
-    if t in ("base_output", "farm_output"):
+    if t == "farm_output":
+        r = execution_result.get("result") or {}
+        return (f"Estimated output for a {execution_result.get('hectares')}-hectare farm in {city}: "
+                f"{r.get('total_output_kwh'):.1f} kWh/day (capacity {r.get('capacity_kwp'):.1f} kWp "
+                f"x specific yield {r.get('specific_yield_kwh_per_kwp'):.4f} kWh/kWp/day).")
+
+    if t == "base_output":
         value = execution_result.get("value")
-        if t == "farm_output":
-            return f"Estimated output for a {execution_result.get('hectares')}-hectare farm in {city}: {value:.3f}."
-        return f"Estimated daily output per unit area in {city}: {value:.4f}."
+        return f"Estimated daily specific yield in {city}: {value:.4f} kWh/kWp."
 
     if t == "weather_conditioned_output":
         r = execution_result.get("result") or {}
-        return f"Estimated output in {city} under the given conditions: {r.get('prediction'):.4f}."
+        if "total_output_kwh" in r:
+            return (f"Estimated output in {city} under the given conditions: {r.get('total_output_kwh'):.1f} kWh/day "
+                    f"(capacity {r.get('capacity_kwp'):.1f} kWp x specific yield "
+                    f"{r.get('specific_yield_kwh_per_kwp'):.4f} kWh/kWp/day).")
+        return f"Estimated specific yield in {city} under the given conditions: {r.get('specific_yield_kwh_per_kwp'):.4f} kWh/kWp/day."
 
     if t == "rainfall_sensitivity":
         r = execution_result.get("result") or {}
-        return (f"Baseline: {r.get('baseline_prediction'):.4f}, modified: {r.get('modified_prediction'):.4f} "
+        return (f"Baseline: {r.get('baseline_prediction'):.4f} kWh/kWp/day, "
+                f"modified: {r.get('modified_prediction'):.4f} kWh/kWp/day "
                 f"({r.get('pct_change'):.1f}% change).")
 
     if t == "compare_cities":
         ranked = execution_result.get("results", [])
         ordering = ", ".join(
-            f"{r['city']} ({r['prediction']:.3f})" for r in ranked if r.get("prediction") is not None
+            f"{r['city']} ({r['prediction']:.3f} kWh/kWp/day)" for r in ranked if r.get("prediction") is not None
         )
         return f"Ranked by predicted output (highest first): {ordering}."
 
@@ -673,8 +699,9 @@ def answer_question(question, model, features, city_features, feature_ranges, li
 # ---------------------------------------------------------------------------
 
 DEMO_QUESTIONS = [
-    "What's my expected daily solar output per unit area in Adelaide?",
-    "What's my expected daily solar output per unit area in Sydney?",
+    "What can you do?",
+    "What's my expected daily solar output per unit area in Adelaide?", # city out of coverage
+    "What's my expected daily solar output per unit area in Sydney?", # city is one of 27 usable cities
     "If I build a 5-hectare solar farm in Melbourne, what's my expected daily output?",
     "What is my expected yield tomorrow in MountGambier given Sunshine of 9 hours and Cloud9am of 1?",
     "Which would yield more solar power: Sydney, Melbourne, or Brisbane?",
@@ -682,7 +709,8 @@ DEMO_QUESTIONS = [
     "How would my expected yield in Melbourne Airport change if rainfall tripled?",
     "What's a reasonable estimate of solar output for Perth?",
     "How variable is rainfall in AliceSprings?",
-    "What fraction of days in Canberra have Cloud9am below 3?"
+    "What fraction of days in Canberra have Cloud9am below 3?",
+    "If I build a 1-hectare solar farm in Portland, what's my expected daily output?",
 ]
 
 
@@ -691,8 +719,13 @@ def main():
 
     for q in DEMO_QUESTIONS:
         print(f"\nQ: {q}")
+        start_time = datetime.now()
+        start_perf = time.perf_counter()
         answer = answer_question(q, model, features, city_features, feature_ranges, list_cities, weather_raw=weather_raw)
+        end_time = datetime.now()
+        elapsed = time.perf_counter() - start_perf
         print(f"A: {answer}")
+        print(f"  Started: {start_time:%H:%M:%S.%f} | Ended: {end_time:%H:%M:%S.%f} | Elapsed: {elapsed:.3f}s")
 
 
 if __name__ == "__main__":
