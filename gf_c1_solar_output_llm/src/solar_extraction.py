@@ -41,7 +41,7 @@ OUTPUT_PATH = _se_cfg["output_path"]
 
 METRIC_CRS = _se_cfg["metric_crs"]      # Australian Albers Equal Area (meters)
 WGS84 = _se_cfg["wgs84_crs"]            # standard lat/lon
-BUFFER_RADIUS_M = int(_se_cfg["buffer_radius_m"])   # 15 km — documented assumption, adjust/justify as needed
+BUFFER_RADIUS_M = int(_se_cfg["buffer_radius_m"])   # 15 km documented assumption
 
 CITY_NAMES = [c.strip() for c in _se_cfg["city_names"].split(",")]
 
@@ -50,11 +50,7 @@ CITY_NAMES = [c.strip() for c in _se_cfg["city_names"].split(",")]
 # Step 1: Geocode city names -> lat/lon (cached to CSV)
 # ---------------------------------------------------------------------------
 
-# Rough bounding box for mainland Australia + Tasmania, used to sanity-check
-# geocoding results. Geocoders can silently return a match outside Australia
-# for ambiguous city names (e.g. a "Richmond" or "Perth" elsewhere in the
-# world) — anything outside this box is almost certainly a bad match.
-AUSTRALIA_BOUNDS = {"lat_min": -44.0, "lat_max": -10.0, "lon_min": 112.0, "lon_max": 168.0}
+AUSTRALIA_BOUNDS = {"lat_min": -44.0, "lat_max": -9.0, "lon_min": 112.0, "lon_max": 160.0}
 
 
 def geocode_cities(city_names, cache_path=COORDS_CACHE_PATH, country="Australia"):
@@ -75,12 +71,10 @@ def geocode_cities(city_names, cache_path=COORDS_CACHE_PATH, country="Australia"
     records = []
     for city in city_names:
         try:
-            # country_codes restricts results to Australia; exactly_one avoids
-            # ambiguity. This alone doesn't guarantee a correct match for
-            # small/ambiguous names, hence the bounding-box check below.
             location = geolocator.geocode(
                 f"{city}, {country}", country_codes="au", exactly_one=True
             )
+            # Bounding box check
             if location and _in_australia(location.latitude, location.longitude):
                 records.append({"city": city, "lat": location.latitude, "lon": location.longitude})
             elif location:
