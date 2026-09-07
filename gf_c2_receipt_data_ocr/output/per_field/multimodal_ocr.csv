@@ -1,0 +1,6 @@
+condition,field,n_receipts,extraction_rate,exact_match_rate,avg_similarity
+multimodal_ocr,company,200,0.95,0.0,0.22
+multimodal_ocr,date,200,0.145,0.01,0.08
+multimodal_ocr,address,200,0.065,0.0,0.106
+multimodal_ocr,total,200,0.035,0.005,0.019
+multimodal_ocr,OVERALL,200,0.299,0.004,0.106

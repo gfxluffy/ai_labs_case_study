@@ -1,0 +1,6 @@
+condition,field,n_receipts,extraction_rate,exact_match_rate,avg_similarity
+raw_ocr,company,200,1.0,0.155,0.475
+raw_ocr,date,200,0.755,0.675,0.744
+raw_ocr,address,200,1.0,0.005,0.203
+raw_ocr,total,200,0.59,0.25,0.437
+raw_ocr,OVERALL,200,0.836,0.271,0.465

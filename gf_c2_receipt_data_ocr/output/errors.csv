@@ -1,0 +1,614 @@
+image_id,error,elapsed_seconds
+X51005568891,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005568891.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.1
+X51007231343,"Basic OCR subprocess failed (returncode=1) on sroie_v2\test\img\X51007231343.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.8
+X51007846451,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51007846451.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",15.1
+X51006913028,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006913028.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",11.1
+X51008142068,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008142068.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.2
+X51006335818,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006335818.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",10.4
+X51006557173,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006557173.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",10.5
+X51006913054,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006913054.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1216348160 bytes.
+",11.9
+X51009447842,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51009447842.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.9
+X51008164525,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008164525.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",10.4
+X51005719895,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005719895.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",10.2
+X51005441407,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005441407.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",10.6
+X51005724611,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005724611.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",10.9
+X51005337872,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005337872.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",15.2
+X51007846269,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51007846269.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",16.1
+X51006392122,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006392122.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",21.3
+X51006913032,"Basic OCR subprocess failed (returncode=1) on sroie_v2\test\img\X51006913032.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.7
+X51005568889,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005568889.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.2
+X51006620161,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006620161.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.0
+X51005676549,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005676549.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.9
+X51005757304,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005757304.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.4
+X51005764161,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005764161.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.9
+X51005710963,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005710963.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.8
+X51006008057,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006008057.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.9
+X51007339163,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51007339163.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51007339165,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007339165.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006414674,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006414674.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.5
+X51006414483,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006414483.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.4
+X51007846370,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51007846370.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.4
+X51005361897,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51005361897.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.1
+X51006334926,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006334926.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006555833,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006555833.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51006557210,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006557210.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51005677327,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005677327.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51005568892,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005568892.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006555806,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006555806.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006619509,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006619509.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51007103641,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007103641.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51007339134,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51007339134.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005711402,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005711402.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51007846325,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51007846325.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.3
+X51008142060,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008142060.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005724625,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005724625.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51008114217,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008114217.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51008114284,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008114284.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005676541,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005676541.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006414711,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006414711.jpg: Using CPU. Note: This module is much faster with a GPU.
+",7.4
+X51007339643,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007339643.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.8
+X51005361907,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005361907.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005433514,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005433514.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.0
+X51005301661,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005301661.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.9
+X51006556827,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006556827.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.8
+X51006556656,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006556656.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.0
+X51007103597,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51007103597.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51008142030,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008142030.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006556838,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006556838.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51005677336,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005677336.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",11.0
+X51006393377,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006393377.jpg: Using CPU. Note: This module is much faster with a GPU.
+",10.0
+X51008042793,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008042793.jpg: Using CPU. Note: This module is much faster with a GPU.
+",6.4
+X51006401845,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006401845.jpg: Using CPU. Note: This module is much faster with a GPU.
+",6.5
+X51005757286,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005757286.jpg: Using CPU. Note: This module is much faster with a GPU.
+",6.4
+X51006619862,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006619862.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51008164996,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008164996.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51006387950,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006387950.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51005677331,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005677331.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005441402,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005441402.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.8
+X51007103668,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51007103668.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006414719,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006414719.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.5
+X51006556861,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006556861.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006008091,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006008091.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51006557208,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006557208.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006556840,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006556840.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.8
+X51008030563,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51008030563.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006913073,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006913073.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.4
+X51007103681,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007103681.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51005663300,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005663300.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51006619564,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006619564.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007339150,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007339150.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51008142065,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008142065.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007339111,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007339111.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51007846372,"Basic OCR subprocess failed (returncode=1) on sroie_v2\test\img\X51007846372.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.3
+X51005447832,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005447832.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007103610,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51007103610.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005676535,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005676535.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51006556851,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006556851.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51006327978,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006327978.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006619697,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006619697.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007846371,"Basic OCR subprocess failed (returncode=1) on sroie_v2\test\img\X51007846371.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.4
+X51006556865,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006556865.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006554833,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006554833.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.7
+X51005719886,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005719886.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005442394,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005442394.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006414733,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006414733.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.5
+X51005676547,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005676547.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006327960,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006327960.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51006913060,"Basic OCR subprocess failed (returncode=1) on sroie_v2\test\img\X51006913060.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.3
+X51008164991,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008164991.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006620182,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006620182.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51006828217,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006828217.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51008142034,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008142034.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51005757324,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005757324.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006913018,"Basic OCR subprocess failed (returncode=1) on sroie_v2\test\img\X51006913018.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.4
+X51006857071,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006857071.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006387740,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006387740.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005587267,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005587267.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006350763,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006350763.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005444037,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005444037.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51008042792,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008042792.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007339648,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007339648.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006008166,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006008166.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005722668,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005722668.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005719862,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005719862.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005719889,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005719889.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006913007,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006913007.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.4
+X51005568895,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005568895.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005746204,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005746204.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.3
+X51006334770,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006334770.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006414671,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006414671.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.3
+X51008123447,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008123447.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006556828,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006556828.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51008122920,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008122920.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006388066,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006388066.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005675914,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005675914.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005442341,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005442341.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005441408,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005441408.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007228448,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51007228448.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51005685357,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005685357.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005757201,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005757201.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006733495,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006733495.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006008073,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006008073.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005288570,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005288570.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007231338,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51007231338.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.1
+X51006619758,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006619758.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005757233,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005757233.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51006556831,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006556831.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",9.1
+X51008099054,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008099054.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51006867436,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006867436.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51007846309,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51007846309.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.4
+X51006913074,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006913074.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.3
+X51006414720,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51006414720.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1216348160 bytes.
+",10.3
+X51008114321,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008114321.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51009453801,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51009453801.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51008099043,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008099043.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005663272,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005663272.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006349083,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51006349083.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51007846388,"Basic OCR subprocess failed (returncode=1) on sroie_v2\train\img\X51007846388.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.2
+X51005230605,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005230605.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
+X51006619765,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006619765.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51006619698,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51006619698.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51008123450,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51008123450.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.5
+X51005719893,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005719893.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51006414532,"Basic OCR subprocess failed (returncode=1) on sroie_v2\test\img\X51006414532.jpg: File ""C:\Users\Juliahnna Patricia\Desktop\Career\Job Hunt\Stratpoint\sp\Lib\site-packages\torch\nn\modules\conv.py"", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1195376640 bytes.
+",10.3
+X51005719914,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\train\img\X51005719914.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.4
+X51005745213,"Basic OCR subprocess failed (returncode=3221225477) on sroie_v2\test\img\X51005745213.jpg: modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+",8.6
